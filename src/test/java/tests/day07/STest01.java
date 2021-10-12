@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ISelect;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -45,15 +47,20 @@ public class STest01 {
         WebElement PurchaseForeignCurrency= driver.findElement(By.linkText("Purchase Foreign Currency"));
         PurchaseForeignCurrency.click();
         //7. “Purchase Foreign Currency” tusuna basin
-WebElement currency=driver.findElement(By.xpath("//select[@id='pc_currency']"));
 
+        WebElement currency=driver.findElement(By.xpath("//select[@id='pc_currency']"));
+
+        Select select= new Select(currency);
+        select.selectByValue("EUR");
         //8. “Currency” drop down menusunden Eurozone’u secin
+        WebElement amount= driver.findElement(By.xpath("//input[@id='pc_amount']"));
+        amount.sendKeys("5000");
         //9. “amount” kutusuna bir sayi girin
+
         //10. “US Dollars” in secilmedigini test edin
         //11. “Selected currency” butonunu secin
         //12. “Calculate Costs” butonuna basin sonra “purchase” butonuna basin
-        //13. “Foreign currency cash was successfully purchased.” yazisinin ciktigini kontrol
-        //edin.
+        //13. “Foreign currency cash was successfully purchased.” yazisinin ciktigini kontrol edin.
 
     }
 }
