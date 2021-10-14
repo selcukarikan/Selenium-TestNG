@@ -39,6 +39,7 @@ public class C02_Iframe {
         System.out.println(baslikYaziElementi.getText());
 
         driver.switchTo().frame("mce_0_ifr");
+        // driver.switchTo().frame(0); index numarasi ile de yazilabilir
         WebElement schreibText= driver.findElement(By.xpath("//*[@id='tinymce']"));
         //		○ Text Box’a “Merhaba Dunya!” yazin.
         schreibText.clear();
