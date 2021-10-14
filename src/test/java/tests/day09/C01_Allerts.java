@@ -19,7 +19,10 @@ public class C01_Allerts {
 
     //Bir class olusturun: C01_Alerts
 
-
+    // Her Allert JS Allert degildir
+    // Allert ciktiginda sag click yapip incele diyebiliyorsak bu bir HTML alert'dir
+    // HTML alert'ler siradan webelement'ler olarak locate edilip kullanilabilir
+    // Sag click yapamiyorsak alert bir JS Allert'dur ve switchTo() kullanilarak handle edilebilir
 
 
     WebDriver driver;
