@@ -28,6 +28,10 @@ public class C03_FileExist extends TestBase {
 
         System.out.println(Files.exists(Paths.get(pathFile)));
         Assert.assertTrue(Files.exists(Paths.get(pathFile)));
+
+        System.out.println(System.getProperty("user.dir")); // icinde oldugumuz dosyanin yolunu verir
+
+
     }
 
 }
