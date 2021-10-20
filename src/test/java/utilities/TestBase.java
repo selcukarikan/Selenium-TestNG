@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeClass;
 
 import java.util.concurrent.TimeUnit;
 
+import static java.lang.Thread.sleep;
+
 public class TestBase {
     //abstract yaparak bu classdan obje olusturulmasinin onune geceriz
     protected WebDriver driver;
@@ -24,5 +26,5 @@ public class TestBase {
     @AfterClass
     public void tearDown(){
 
-       // driver.close();
+      //  driver.close();
     }}
