@@ -60,7 +60,7 @@ public class C02_Faker extends TestBase {
 
         Thread.sleep(10000);
         actions.sendKeys(Keys.ENTER).perform();
-
+        driver.close();
 
 
         //Isaretlediginiz cinsiyetin secili, diger cinsiyet kutusunun secili olmadigini test
