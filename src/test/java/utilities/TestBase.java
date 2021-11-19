@@ -17,7 +17,7 @@ public class TestBase {
     //dolayisiyla olusturdugumuz driver variable icin protected acces modifier i seciyoruz
 
     @BeforeClass
-    public void setup(){
+    public void setup() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         driver.manage().window().maximize();
