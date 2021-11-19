@@ -11,7 +11,7 @@ public class Test01_Practise extends TestBase {
     public void setUp() throws InterruptedException {
         driver.get("https://shop.polymer-project.org/");
 
-        Thread.sleep(3000);
+        Thread.sleep(3200);
 
         JavascriptExecutor jsExecutrer = (JavascriptExecutor) driver;
 
