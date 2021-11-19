@@ -16,7 +16,7 @@ public class Test02_Practise extends TestBase {
         WebElement aramaKutusu = (WebElement) jsExecutrer.executeScript("return document.querySelector(\"body > book-app\")." +
                 "shadowRoot.querySelector(\"#input\")");
 
-        aramaKutusu.sendKeys("Basitmis degil mi?");
+        aramaKutusu.sendKeys("Es ist nicht schwierig?");
 
         Thread.sleep(3000);
     }
